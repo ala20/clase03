@@ -1,6 +1,7 @@
 package col.lospepes.loginxd;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -47,7 +48,14 @@ public class BotonesButter extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_login:
-                Toast.makeText(this, "login", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "login", Toast.LENGTH_SHORT).show();
+                Intent intent= new Intent(this,activity2.class);
+                intent.putExtra("nombre", "ANDRE");
+
+                startActivity(intent);
+
+
+
                 break;
             case R.id.btn_fb:Toast.makeText(this, "facebook", Toast.LENGTH_SHORT).show();
                 break;
