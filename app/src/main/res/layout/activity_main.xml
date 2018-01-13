@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="col.lospepes.loginxd.MainActivity"
+    android:background="@drawable/wallpaper">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.2"
+        ></RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ScrollView
+             android:layout_alignParentBottom="true"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:focusableInTouchMode="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_and"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="60dp"                />
+            <EditText
+                android:id="@+id/et_mail"
+                android:background="@color/blanco"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="15dp"
+                android:hint="Correo Electrónico"
+                android:layout_marginBottom="15dp"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@color/blanco"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="15dp"
+                android:hint="Contraseña"
+                android:layout_marginBottom="15dp"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresar"
+                android:background="#c4302b"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/btn_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/facebook"
+                android:text="Ingresar con Facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿OLVIDASTE TU CONTRASEÑA?"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/blanco"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Registrate"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+</ScrollView>
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
